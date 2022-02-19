@@ -5,7 +5,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="MathGeneratorXMLQuestions.main" options="--add-modules java.base" />
+      <module name="MathGeneratorXMLQuestions.main" options="--add-modules java.base,java.xml" />
     </option>
   </component>
 </project>

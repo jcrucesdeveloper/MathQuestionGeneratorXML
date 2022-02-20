@@ -1,7 +1,6 @@
 package input;
 
-import MathQuestionGeneratorXML.input.XMLFileHandler;
-import MathQuestionGeneratorXML.input.XMLParser;
+import MathQuestionGeneratorXML.input.xml.XMLParser;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,9 +15,12 @@ public class TestXMLParser {
     private XMLParser xmlParser;
 
 
+
     @BeforeEach
-    public void setUP() {
-        xmlParser = new XMLParser("/questions.xml");
+    public void setUp() {
+        xmlParser = new XMLParser("/home/jaco/IdeaProjects/MathGeneratorXMLQuestions/src/test/resources/questions.xml");
+        xmlParser.setParentTag("question");
+
     }
 
     @Test
@@ -28,16 +30,31 @@ public class TestXMLParser {
 
     @Test
     public void testGetParentTagName() {
-        xmlParser.setParentTag("question");
         assertEquals("question", xmlParser.getParentTagName());
+    }
+
+
+    @Test
+    public void testGetNameFirstChildByName() {
+        assertEquals("alternative1",xmlParser.getChildTagByName("alternative1").getName());
     }
 
     @Test
     public void testGetValueFirstChildByName() {
-        assertEquals("alternative1",xmlParser.getChild("alternative1").getValue());
+        assertEquals("alternative1",xmlParser.getChildTagByName("alternative1").getValue());
+
     }
 
     @Test
+    public void testGetNameFirstChildByNumber() {
+        assertEquals("alternative1",xmlParser.getChildTagByNumber(1).getName());
+    }
+
+    @Test
+    public void testGetValueFirstChildByNumber() {
+        assertEquals("alternative1",xmlParser.getChildTagByNumber(1).getValue());
+
+    }
 
 
 }

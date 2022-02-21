@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="logic.TestReaderQuestions" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-21T13:59:48" hostname="jaco" time="0.013">
+  <properties/>
+  <testcase name="testListQuestionsFile()" classname="logic.TestReaderQuestions" time="0.013"/>
+  <system-out><![CDATA[questionsArithmetic.xml
+questionsAlgebraEquationsFirstOrder.xml
+questions.xml
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

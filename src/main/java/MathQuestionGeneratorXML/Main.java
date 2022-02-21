@@ -1,8 +1,12 @@
 package MathQuestionGeneratorXML;
 
+import MathQuestionGeneratorXML.logic.OutputHandler;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hola mundo");
+        OutputHandler outputHandler = new OutputHandler();
+        outputHandler.start();
     }
+
 }

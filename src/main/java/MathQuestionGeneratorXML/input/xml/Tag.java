@@ -1,5 +1,7 @@
 package MathQuestionGeneratorXML.input.xml;
 
+import org.w3c.dom.NodeList;
+
 public class Tag {
 
     private final String name;
@@ -7,9 +9,7 @@ public class Tag {
     private final String attribute;
 
     public Tag(String name, String value) {
-        this.name = name;
-        this.value = value;
-        this.attribute = null;
+        this(name,value,null);
     }
 
     public Tag(String name, String value, String attribute) {

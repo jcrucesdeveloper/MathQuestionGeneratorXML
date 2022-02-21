@@ -30,7 +30,6 @@ public class XMLFileHandler {
         try {
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            System.out.println(file.getName());
             xmlDocument = dBuilder.parse(file);
 
         } catch (SAXException | IOException | ParserConfigurationException e) {

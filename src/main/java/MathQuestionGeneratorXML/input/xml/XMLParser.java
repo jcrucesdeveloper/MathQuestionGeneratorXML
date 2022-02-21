@@ -37,12 +37,12 @@ public class XMLParser {
         return parentTagNodes.item(0).getNodeName();
     }
 
-    public Tag getChildTagByName(String name) {
-        return new Tag("lkjafs","kaljfdsa");
+    public int getSizeQuestions() {
+        return parentTagNodes.getLength();
     }
 
-    public Tag getChildTagByNumber(int number) {
-        return new Tag("lkjafs","kaljfdsa");
+    public TagGroup getTagGroupByNumber(int number) {
+        return new TagGroup(parentTagNodes.item(number));
     }
 
 

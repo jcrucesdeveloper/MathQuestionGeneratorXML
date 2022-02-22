@@ -17,15 +17,17 @@ public class OutputHandler {
 
         menuHandler.changeMenu(mainMenu);
 
-        int valueMenu;
+        String valueMenu;
 
         do {
+
             IMenu currentMenu = menuHandler.getMenu();
 
             currentMenu.displayMenu();
-            valueMenu = scanner.nextInt();
+            valueMenu = scanner.nextLine();
             currentMenu.processInput(valueMenu);
-        } while(valueMenu != -1 );
+
+        } while(valueMenu != "-1");
     }
 
 }

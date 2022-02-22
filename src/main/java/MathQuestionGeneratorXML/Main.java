@@ -1,6 +1,6 @@
 package MathQuestionGeneratorXML;
 
-import MathQuestionGeneratorXML.logic.OutputHandler;
+import MathQuestionGeneratorXML.output.OutputHandler;
 
 public class Main {
 

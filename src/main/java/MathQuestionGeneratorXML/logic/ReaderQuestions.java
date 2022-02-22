@@ -15,11 +15,9 @@ public class ReaderQuestions {
 
     public final String FILEPATH = "./src/main/resources/";
 
-    private String path;
     private ArrayList<String> filePaths;
 
-    public ReaderQuestions(String path) {
-        this.path = path;
+    public ReaderQuestions() {
         this.filePaths = getQuestionFilePaths();
     }
 

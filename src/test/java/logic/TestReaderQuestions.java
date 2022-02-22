@@ -15,7 +15,6 @@ public class TestReaderQuestions {
 
     @BeforeEach
     public void setUp() {
-        readerQuestions = new ReaderQuestions("/");
 
     }
     @Test

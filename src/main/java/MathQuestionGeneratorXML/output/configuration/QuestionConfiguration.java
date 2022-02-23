@@ -16,4 +16,15 @@ public class QuestionConfiguration {
         this.difficulty = Integer.parseInt(difficulty);
     }
 
+    public String getFileName() {
+        return fileName;
+    }
+
+    public int getNumberQuestions() {
+        return numberQuestions;
+    }
+
+    public int getDifficulty() {
+        return difficulty;
+    }
 }

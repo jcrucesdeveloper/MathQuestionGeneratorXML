@@ -27,10 +27,28 @@ public class SetOfQuestionsConfiguration {
     @Override
     public String toString() {
 
-        String out = "";
+        StringBuilder out = new StringBuilder();
 
-        out += "========================================================";
-        out += "= %s = %s = %s =".formatted();
-        return out;
+        String outputLabels ="== %35s\t\t\t ==\t %5s\t==\t %5s\t ==\n".formatted("FILENAME", "QUANTITY", "DIFFICULTY");
+        String line1 = createLine(outputLabels.length() + 9);
+
+        out.append(line1);
+        out.append(outputLabels);
+        out.append(line1);
+
+        for(QuestionConfiguration configuration: configurations) {
+            out.append("== %40s\t\t ==\t %5d\t\t==\t %5d\t\t ==\n".formatted(
+                    configuration.getFileName()
+                    , configuration.getNumberQuestions()
+                    , configuration.getDifficulty()));
+        }
+        out.append(line1);
+        return out.toString();
+    }
+    private String createLine(int width) {
+        StringBuilder line = new StringBuilder();
+        line.append("=".repeat(Math.max(0, width)));
+        line.append("\n");
+        return line.toString();
     }
 }

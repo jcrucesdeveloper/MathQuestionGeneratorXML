@@ -53,7 +53,9 @@ public class NewConfigurationMenu extends AbstractMenu {
 
     public void processInputFileXMLQuestion(String input) {
         tempQuestionConfiguration = new QuestionConfiguration();
-        tempQuestionConfiguration.setFileName(input);
+        int posFileName = Integer.parseInt(input) - 1;
+        String fileName = readerQuestions.getQuestionFilePaths().get(posFileName);
+        tempQuestionConfiguration.setFileName(fileName);
         this.phase = PhasesNewConfiguration.NUMBER;
     }
 
@@ -64,8 +66,8 @@ public class NewConfigurationMenu extends AbstractMenu {
 
     public void processInputDifficulty(String input) {
         tempQuestionConfiguration.setDifficulty(input);
-        System.out.println(setOfQuestionsConfiguration);
         setOfQuestionsConfiguration.addQuestionConfiguration(tempQuestionConfiguration);
+        System.out.println(setOfQuestionsConfiguration);
         tempQuestionConfiguration = null;
         this.phase = PhasesNewConfiguration.STAND_BY;
 

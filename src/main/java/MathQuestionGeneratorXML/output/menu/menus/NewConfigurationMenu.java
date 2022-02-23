@@ -1,79 +1,130 @@
 package MathQuestionGeneratorXML.output.menu.menus;
 
-import MathQuestionGeneratorXML.Main;
 import MathQuestionGeneratorXML.logic.ReaderQuestions;
 import MathQuestionGeneratorXML.output.configuration.QuestionConfiguration;
+import MathQuestionGeneratorXML.output.configuration.SetOfQuestionsConfiguration;
 import MathQuestionGeneratorXML.output.menu.AbstractMenu;
 import MathQuestionGeneratorXML.output.menu.MenuHandler;
 
+import java.util.Objects;
+
 public class NewConfigurationMenu extends AbstractMenu {
 
-    private ReaderQuestions readerQuestions;
-    private QuestionConfiguration questionConfiguration;
+    private final ReaderQuestions readerQuestions;
+    private SetOfQuestionsConfiguration setOfQuestionsConfiguration;
+    private QuestionConfiguration tempQuestionConfiguration;
 
     private PhasesNewConfiguration phase;
 
     public NewConfigurationMenu(MenuHandler menuHandler) {
         super(menuHandler);
         this.readerQuestions = new ReaderQuestions();
+        this.setOfQuestionsConfiguration = new SetOfQuestionsConfiguration();
         this.phase = PhasesNewConfiguration.NAME;
     }
 
     @Override
     public void processInput(String input) {
-
+        System.out.println("alkdfjas");
         switch (phase) {
-            case NAME -> processInputNameConfiguration(input);
-            case NUMBER -> processInputNumberQuestion(input);
-            case DIFFICULTY -> processInputDifficulty(input);
-            case STAND_BY -> processInputStandBy(input);
-
+            case NAME:
+                processInputNameConfiguration(input);
+                break;
+            case FILE:
+                processInputFileXMLQuestion(input);
+                break;
+            case NUMBER:
+                processInputNumberQuestion(input);
+                break;
+            case DIFFICULTY:
+                processInputDifficulty(input);
+                break;
+            case STAND_BY:
+                processInputStandBy(input);
+                break;
         }
+
     }
 
     public void processInputNameConfiguration(String input) {
-
+        setOfQuestionsConfiguration.setConfigurationName(input);
+        this.phase = PhasesNewConfiguration.FILE;
     }
 
     public void processInputFileXMLQuestion(String input) {
-
+        tempQuestionConfiguration = new QuestionConfiguration();
+        tempQuestionConfiguration.setFileName(input);
+        this.phase = PhasesNewConfiguration.NUMBER;
     }
 
     public void processInputNumberQuestion(String input) {
-
+        tempQuestionConfiguration.setNumberQuestions(input);
+        this.phase = PhasesNewConfiguration.DIFFICULTY;
     }
 
     public void processInputDifficulty(String input) {
+        tempQuestionConfiguration.setDifficulty(input);
+        System.out.println(setOfQuestionsConfiguration);
+        setOfQuestionsConfiguration.addQuestionConfiguration(tempQuestionConfiguration);
+        tempQuestionConfiguration = null;
+        this.phase = PhasesNewConfiguration.STAND_BY;
+
 
     }
 
     public void processInputStandBy(String input) {
+
+        if (Objects.equals(input, "1")) {
+            this.phase = PhasesNewConfiguration.FILE;
+        } else {
+            ProcessingConfigurationMenu processingConfigurationMenu = new ProcessingConfigurationMenu(menuHandler);
+            processingConfigurationMenu.setSetOfQuestionsConfiguration(setOfQuestionsConfiguration);
+
+            this.menuHandler.changeMenu(processingConfigurationMenu);
+        }
 
     }
 
     @Override
     public void displayMenu() {
         switch (phase) {
-            case NAME -> displayInputNameConfiguration();
-            case NUMBER -> displayInputNumberQuestion();
-            case DIFFICULTY -> displayInputDifficulty();
-            case STAND_BY -> displayInputStandBy();
+            case NAME -> displayNameConfiguration();
+            case FILE -> displayFileConfiguration();
+            case NUMBER -> displayNumberQuestion();
+            case DIFFICULTY -> displayDifficulty();
+            case STAND_BY -> displayStandBy();
         }
     }
 
-    public void displayInputNameConfiguration() {
-
+    public void displayNameConfiguration() {
+        displayInBoxFormatted("Write a name for the new Configuration");
+        System.out.print("Name new Configuration:  ");
     }
 
-    public void displayInputNumberQuestion() {
+    public void displayFileConfiguration() {
+        displayInBoxFormatted("Select a file to add Questions: ");
 
+        int counter = 1;
+        for(String questionStr: readerQuestions.getQuestionFilePaths()) {
+            displayOption(counter,questionStr);
+            counter++;
+        }
     }
 
-    public void displayInputDifficulty() {
-
+    public void displayNumberQuestion() {
+        displayInBoxFormatted("Write the number of questions from this file");
     }
 
-    public void displayInputStandBy() {
+    public void displayDifficulty() {
+        displayInBoxFormatted("Select difficulty from this file");
+        for (int i = 1 ; i <= 5; i++) {
+            displayOption(i, "Difficulty %d".formatted(i));
+        }
+    }
 
+    public void displayStandBy() {
+        displayInBoxFormatted("Want to add more questions?");
+        displayOption(1,"Yes");
+        displayOption(2,"No, the Configuration is Ready.");
     }
 }

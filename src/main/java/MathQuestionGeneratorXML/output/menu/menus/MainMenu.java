@@ -10,12 +10,13 @@ public class MainMenu extends AbstractMenu {
     }
 
     @Override
-    public void processInput(int input) {
-        switch (input) {
-            case 1 -> this.menuHandler.changeMenu(new NewConfigurationMenu(this.menuHandler));
-            case 2 -> this.menuHandler.changeMenu(new OldConfigurationMenu(this.menuHandler));
+    public void processInput(String line) {
+        switch (line) {
+            case "1" -> this.menuHandler.changeMenu(new NewConfigurationMenu(this.menuHandler));
+            case "2" -> this.menuHandler.changeMenu(new OldConfigurationMenu(this.menuHandler));
         }
     }
+
 
     @Override
     public void displayMenu() {
@@ -23,7 +24,7 @@ public class MainMenu extends AbstractMenu {
         displayOption(1,"Create a new set of questions with new configuration");
         displayOption(2,"Create a new set of questions using an existing configuration");
         displayOption(0,"Exit");
-        System.out.println("Select one of the options above:");
+        System.out.print("Select one of the options above: ");
     }
 
 

@@ -4,6 +4,7 @@ import MathQuestionGeneratorXML.output.menu.IMenu;
 import MathQuestionGeneratorXML.output.menu.menus.MainMenu;
 import MathQuestionGeneratorXML.output.menu.MenuHandler;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class OutputHandler {
@@ -17,17 +18,22 @@ public class OutputHandler {
 
         menuHandler.changeMenu(mainMenu);
 
-        String valueMenu;
+        String valueMenu = null;
 
         do {
 
-            IMenu currentMenu = menuHandler.getMenu();
+            try {
+                IMenu currentMenu = menuHandler.getMenu();
 
-            currentMenu.displayMenu();
-            valueMenu = scanner.nextLine();
-            currentMenu.processInput(valueMenu);
+                currentMenu.displayMenu();
+                valueMenu = scanner.nextLine();
+                currentMenu.processInput(valueMenu);
 
-        } while(valueMenu != "-1");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        } while(!Objects.equals(valueMenu, "-1"));
     }
 
 }

@@ -10,17 +10,19 @@ public class OldConfigurationMenu extends AbstractMenu {
     }
 
     @Override
-    public void processInput(int input) {
+    public void processInput(String line) {
 
-        switch (input) {
-            case 0 -> this.menuHandler.changeMenu(new MainMenu(menuHandler));
+        switch (line) {
+            case "1" -> this.menuHandler.changeMenu(new ChooseOldConfigurationMenu(menuHandler));
+            case "0" -> this.menuHandler.changeMenu(new MainMenu(menuHandler));
         }
 
     }
 
     @Override
     public void displayMenu() {
-        displayOption(2,"Old cofiguration");
+
+        displayOption(1,"Choose Old Configuration");
         displayOption(0,"Go Back");
 
     }

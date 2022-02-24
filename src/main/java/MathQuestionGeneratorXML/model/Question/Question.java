@@ -9,8 +9,11 @@ public class Question {
     public String questionLabel;
     public String questionTitle;
 
+    private int difficulty = 1;
+
     private ArrayList<Alternative> alternatives;
     private Alternative correctAlternative;
+
 
     public void setQuestionLabel(String questionLabel) {
         this.questionLabel = questionLabel;
@@ -34,5 +37,13 @@ public class Question {
 
     public Alternative getCorrectAlternative() {
         return this.correctAlternative;
+    }
+
+    public int getDifficulty() {
+        return difficulty;
+    }
+
+    public void setDifficulty(int difficulty) {
+        this.difficulty = difficulty;
     }
 }

@@ -3,13 +3,15 @@ package MathQuestionGeneratorXML.logic;
 
 import MathQuestionGeneratorXML.input.xml.TagGroup;
 import MathQuestionGeneratorXML.input.xml.XMLParser;
-import MathQuestionGeneratorXML.model.Question.Alternative;
+import MathQuestionGeneratorXML.logic.questionConfiguration.QuestionConfiguration;
 import MathQuestionGeneratorXML.model.Question.Question;
 
 import java.io.File;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 public class ReaderQuestions {
 
@@ -30,11 +32,35 @@ public class ReaderQuestions {
             Question question = parseTagGroupToQuestion(xmlParser.getTagGroupByNumber(i));
             questions.add(question);
         }
-
         return questions;
     }
 
+    public ArrayList<Question> getQuestionsUsingConfiguration(QuestionConfiguration configuration) {
+
+        // Configuration
+        String filename = configuration.getFileName();
+        int difficulty = configuration.getDifficulty();
+        int quantity = configuration.getNumberQuestions();
+
+        ArrayList<Question> questions = readFileQuestions(filename);
+        questions.removeIf(question -> (question.getDifficulty() != difficulty));
+        return selectRandomQuestionFromList(questions, quantity);
+    }
+
+    public ArrayList<Question> selectRandomQuestionFromList(ArrayList<Question> questions, int n) {
+        Collections.shuffle(questions);
+        return (ArrayList<Question>) questions.subList(0, n);
+    }
+
+
     public Question parseTagGroupToQuestion(TagGroup tagGroup) {
+
+        int difficulty;
+        if (tagGroup.getAttribute("difficulty").equals("")) {
+            difficulty = 1;
+        } else {
+            difficulty = Integer.parseInt(tagGroup.getAttribute("difficulty"));
+        }
 
         String stringAlternative1 = tagGroup.getChildTagByName("alternative1").getValue();
         String stringAlternative2 = tagGroup.getChildTagByName("alternative2").getValue();
@@ -42,11 +68,11 @@ public class ReaderQuestions {
         String stringCorrectAlternative = tagGroup.getChildTagByName("correctAlternative").getValue();
 
         Question question = new Question();
+        question.setDifficulty(difficulty);
         question.addAlternative(1,stringAlternative1);
         question.addAlternative(2,stringAlternative2);
         question.addAlternative(3,stringAlternative3);
         question.setCorrectAlternative(stringCorrectAlternative);
-
         return question;
     }
 

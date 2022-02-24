@@ -1,4 +1,4 @@
-package MathQuestionGeneratorXML.output.configuration;
+package MathQuestionGeneratorXML.logic.questionConfiguration;
 
 public class QuestionConfiguration {
 

@@ -36,6 +36,11 @@ public class TestXMLParser {
     }
 
     @Test
+    public void testGetAttribute() {
+        assertEquals("3",xmlParser.getTagGroupByNumber(0).getAttribute("difficulty"));
+    }
+
+    @Test
     public void testGetSizeQuestions() {
         assertEquals(1,xmlParser.getSizeQuestions());
 

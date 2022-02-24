@@ -14,6 +14,10 @@ public class TagGroup {
         }
     }
 
+    public String getAttribute(String attribute) {
+        return this.elementTagGroup.getAttribute(attribute);
+    }
+
     public Tag getChildTagByName(String name) {
         return new Tag(name,elementTagGroup.getElementsByTagName(name).item(0).getTextContent());
     }

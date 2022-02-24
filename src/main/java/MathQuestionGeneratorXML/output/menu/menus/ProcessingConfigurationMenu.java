@@ -1,6 +1,6 @@
 package MathQuestionGeneratorXML.output.menu.menus;
 
-import MathQuestionGeneratorXML.output.configuration.SetOfQuestionsConfiguration;
+import MathQuestionGeneratorXML.logic.questionConfiguration.SetOfQuestionsConfiguration;
 import MathQuestionGeneratorXML.output.menu.AbstractMenu;
 import MathQuestionGeneratorXML.output.menu.MenuHandler;
 
@@ -19,7 +19,7 @@ public class ProcessingConfigurationMenu extends AbstractMenu {
 
     @Override
     public void displayMenu() {
-
+        displayInBoxFormatted("PROCESSING CONFIGURATION");
     }
 
     public void setSetOfQuestionsConfiguration(SetOfQuestionsConfiguration setOfQuestionsConfiguration) {

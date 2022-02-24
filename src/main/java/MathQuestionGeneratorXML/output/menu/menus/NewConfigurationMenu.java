@@ -1,8 +1,8 @@
 package MathQuestionGeneratorXML.output.menu.menus;
 
 import MathQuestionGeneratorXML.logic.ReaderQuestions;
-import MathQuestionGeneratorXML.output.configuration.QuestionConfiguration;
-import MathQuestionGeneratorXML.output.configuration.SetOfQuestionsConfiguration;
+import MathQuestionGeneratorXML.logic.questionConfiguration.QuestionConfiguration;
+import MathQuestionGeneratorXML.logic.questionConfiguration.SetOfQuestionsConfiguration;
 import MathQuestionGeneratorXML.output.menu.AbstractMenu;
 import MathQuestionGeneratorXML.output.menu.MenuHandler;
 
@@ -25,7 +25,6 @@ public class NewConfigurationMenu extends AbstractMenu {
 
     @Override
     public void processInput(String input) {
-        System.out.println("alkdfjas");
         switch (phase) {
             case NAME:
                 processInputNameConfiguration(input);
@@ -79,6 +78,9 @@ public class NewConfigurationMenu extends AbstractMenu {
         if (Objects.equals(input, "1")) {
             this.phase = PhasesNewConfiguration.FILE;
         } else {
+            System.out.println("Final Configuration Saved: ");
+            System.out.println(setOfQuestionsConfiguration);
+
             ProcessingConfigurationMenu processingConfigurationMenu = new ProcessingConfigurationMenu(menuHandler);
             processingConfigurationMenu.setSetOfQuestionsConfiguration(setOfQuestionsConfiguration);
 

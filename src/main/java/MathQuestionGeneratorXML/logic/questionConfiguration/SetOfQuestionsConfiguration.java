@@ -1,4 +1,6 @@
-package MathQuestionGeneratorXML.output.configuration;
+package MathQuestionGeneratorXML.logic.questionConfiguration;
+
+import MathQuestionGeneratorXML.model.Question.Question;
 
 import java.util.ArrayList;
 
@@ -16,8 +18,8 @@ public class SetOfQuestionsConfiguration {
     }
 
 
-    public void saveConfiguration() {
-
+    public ArrayList<QuestionConfiguration> getConfiguration() {
+        return this.configurations;
     }
 
     public void setConfigurationName(String configurationName) {
@@ -28,6 +30,13 @@ public class SetOfQuestionsConfiguration {
     public String toString() {
 
         StringBuilder out = new StringBuilder();
+
+        out.append("\n");
+        String configurationNameStr = "= Configuration name: %s =\n".formatted(this.configurationName);
+        String line2 = createLine(configurationNameStr.length() - 1);
+
+        out.append(line2);
+        out.append(configurationNameStr);
 
         String outputLabels ="== %35s\t\t\t ==\t %5s\t==\t %5s\t ==\n".formatted("FILENAME", "QUANTITY", "DIFFICULTY");
         String line1 = createLine(outputLabels.length() + 9);

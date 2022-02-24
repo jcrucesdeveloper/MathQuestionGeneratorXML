@@ -1,6 +1,6 @@
 package MathQuestionGeneratorXML.output.menu;
 
-public class MenuHandler {
+public class MenuChanger {
 
     private IMenu menu;
 

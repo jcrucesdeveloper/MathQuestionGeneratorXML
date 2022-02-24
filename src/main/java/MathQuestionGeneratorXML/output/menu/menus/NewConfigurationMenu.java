@@ -4,7 +4,7 @@ import MathQuestionGeneratorXML.logic.ReaderQuestions;
 import MathQuestionGeneratorXML.logic.questionConfiguration.QuestionConfiguration;
 import MathQuestionGeneratorXML.logic.questionConfiguration.SetOfQuestionsConfiguration;
 import MathQuestionGeneratorXML.output.menu.AbstractMenu;
-import MathQuestionGeneratorXML.output.menu.MenuHandler;
+import MathQuestionGeneratorXML.output.menu.MenuChanger;
 
 import java.util.Objects;
 
@@ -16,8 +16,8 @@ public class NewConfigurationMenu extends AbstractMenu {
 
     private PhasesNewConfiguration phase;
 
-    public NewConfigurationMenu(MenuHandler menuHandler) {
-        super(menuHandler);
+    public NewConfigurationMenu(MenuChanger menuChanger) {
+        super(menuChanger);
         this.readerQuestions = new ReaderQuestions();
         this.setOfQuestionsConfiguration = new SetOfQuestionsConfiguration();
         this.phase = PhasesNewConfiguration.NAME;
@@ -81,10 +81,10 @@ public class NewConfigurationMenu extends AbstractMenu {
             System.out.println("Final Configuration Saved: ");
             System.out.println(setOfQuestionsConfiguration);
 
-            ProcessingConfigurationMenu processingConfigurationMenu = new ProcessingConfigurationMenu(menuHandler);
+            ProcessingConfigurationMenu processingConfigurationMenu = new ProcessingConfigurationMenu(menuChanger);
             processingConfigurationMenu.setSetOfQuestionsConfiguration(setOfQuestionsConfiguration);
 
-            this.menuHandler.changeMenu(processingConfigurationMenu);
+            this.menuChanger.changeMenu(processingConfigurationMenu);
         }
 
     }

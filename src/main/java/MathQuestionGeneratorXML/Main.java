@@ -1,12 +1,12 @@
 package MathQuestionGeneratorXML;
 
-import MathQuestionGeneratorXML.output.OutputHandler;
+import MathQuestionGeneratorXML.output.MenuHandler;
 
 public class Main {
 
     public static void main(String[] args) {
-        OutputHandler outputHandler = new OutputHandler();
-        outputHandler.start();
+        MenuHandler menuHandler = new MenuHandler();
+        menuHandler.startMenu();
     }
 
 }

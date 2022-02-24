@@ -1,5 +1,6 @@
 package MathQuestionGeneratorXML.model.Question;
 
+import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 
 public class Question {
@@ -13,6 +14,10 @@ public class Question {
 
     private ArrayList<Alternative> alternatives;
     private Alternative correctAlternative;
+
+    public Question() {
+        alternatives = new ArrayList<Alternative>();
+    }
 
 
     public void setQuestionLabel(String questionLabel) {

@@ -1,19 +1,19 @@
 package MathQuestionGeneratorXML.output.menu.menus;
 
 import MathQuestionGeneratorXML.output.menu.AbstractMenu;
-import MathQuestionGeneratorXML.output.menu.MenuHandler;
+import MathQuestionGeneratorXML.output.menu.MenuChanger;
 
 public class MainMenu extends AbstractMenu {
 
-    public MainMenu(MenuHandler menuHandler) {
-        super(menuHandler);
+    public MainMenu(MenuChanger menuChanger) {
+        super(menuChanger);
     }
 
     @Override
     public void processInput(String line) {
         switch (line) {
-            case "1" -> this.menuHandler.changeMenu(new NewConfigurationMenu(this.menuHandler));
-            case "2" -> this.menuHandler.changeMenu(new OldConfigurationMenu(this.menuHandler));
+            case "1" -> this.menuChanger.changeMenu(new NewConfigurationMenu(this.menuChanger));
+            case "2" -> this.menuChanger.changeMenu(new OldConfigurationMenu(this.menuChanger));
         }
     }
 

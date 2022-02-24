@@ -2,29 +2,27 @@ package MathQuestionGeneratorXML.output;
 
 import MathQuestionGeneratorXML.output.menu.IMenu;
 import MathQuestionGeneratorXML.output.menu.menus.MainMenu;
-import MathQuestionGeneratorXML.output.menu.MenuHandler;
+import MathQuestionGeneratorXML.output.menu.MenuChanger;
 
 import java.util.Objects;
 import java.util.Scanner;
 
-public class OutputHandler {
+public class MenuHandler {
 
-    public void start() {
+    public void startMenu() {
 
         Scanner scanner = new Scanner(System.in);
 
-        MenuHandler menuHandler = new MenuHandler();
-        IMenu mainMenu = new MainMenu(menuHandler);
+        MenuChanger menuChanger = new MenuChanger();
+        IMenu mainMenu = new MainMenu(menuChanger);
 
-        menuHandler.changeMenu(mainMenu);
+        menuChanger.changeMenu(mainMenu);
 
         String valueMenu = null;
 
         do {
-
             try {
-                IMenu currentMenu = menuHandler.getMenu();
-
+                IMenu currentMenu = menuChanger.getMenu();
                 currentMenu.displayMenu();
                 valueMenu = scanner.nextLine();
                 currentMenu.processInput(valueMenu);

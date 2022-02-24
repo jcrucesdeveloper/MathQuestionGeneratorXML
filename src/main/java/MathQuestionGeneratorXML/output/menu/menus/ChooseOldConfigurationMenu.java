@@ -1,11 +1,11 @@
 package MathQuestionGeneratorXML.output.menu.menus;
 
 import MathQuestionGeneratorXML.output.menu.AbstractMenu;
-import MathQuestionGeneratorXML.output.menu.MenuHandler;
+import MathQuestionGeneratorXML.output.menu.MenuChanger;
 
 public class ChooseOldConfigurationMenu extends AbstractMenu {
-    public ChooseOldConfigurationMenu(MenuHandler menuHandler) {
-        super(menuHandler);
+    public ChooseOldConfigurationMenu(MenuChanger menuChanger) {
+        super(menuChanger);
     }
 
     @Override

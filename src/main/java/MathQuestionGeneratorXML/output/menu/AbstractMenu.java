@@ -1,17 +1,15 @@
 package MathQuestionGeneratorXML.output.menu;
 
-import java.awt.*;
-
 public abstract class AbstractMenu implements IMenu {
 
-    protected MenuHandler menuHandler;
+    protected MenuChanger menuChanger;
 
     public final int menuWidth = 40;
     public String line1;
 
-    public AbstractMenu(MenuHandler menuHandler) {
+    public AbstractMenu(MenuChanger menuChanger) {
         createLine(menuWidth);
-        this.menuHandler = menuHandler;
+        this.menuChanger = menuChanger;
     }
 
     public void displayOption(int number, String msg) {

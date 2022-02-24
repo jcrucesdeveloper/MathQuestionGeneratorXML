@@ -26,6 +26,8 @@ public class ReaderQuestions {
     public ArrayList<Question> readFileQuestions(String name) {
 
         XMLParser xmlParser = new XMLParser(FILEPATH + name);
+        xmlParser.setParentTag("question");
+
         ArrayList<Question> questions = new ArrayList<>();
 
         for(int i = 0; i < xmlParser.getSizeQuestions(); i++) {
@@ -48,8 +50,17 @@ public class ReaderQuestions {
     }
 
     public ArrayList<Question> selectRandomQuestionFromList(ArrayList<Question> questions, int n) {
-        Collections.shuffle(questions);
-        return (ArrayList<Question>) questions.subList(0, n);
+
+        ArrayList<Question> questionsOut = new ArrayList<>();
+        Random rand = new Random();
+
+        for (int i = 0; i < n; i++) {
+            int randomIndex = rand.nextInt(questions.size());
+            Question randomQuestion = questions.get(randomIndex);
+            questionsOut.add(randomQuestion);
+            questions.remove(randomIndex);
+        }
+        return questionsOut;
     }
 
 

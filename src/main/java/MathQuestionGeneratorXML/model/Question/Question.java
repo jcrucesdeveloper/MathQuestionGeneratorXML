@@ -7,8 +7,8 @@ public class Question {
 
     private int questionNumber;
 
-    public String questionLabel;
-    public String questionTitle;
+    private String questionLabel;
+    private String questionTitle;
 
     private int difficulty = 1;
 
@@ -36,6 +36,10 @@ public class Question {
         correctAlternative = new Alternative(-1, value);
     }
 
+    public ArrayList<Alternative> getAlternatives() {
+        return this.alternatives;
+    }
+
     public Alternative getAlternativeByNumber(int number) {
         return alternatives.get(number);
     }
@@ -50,5 +54,13 @@ public class Question {
 
     public void setDifficulty(int difficulty) {
         this.difficulty = difficulty;
+    }
+
+    public String getQuestionLabel() {
+        return questionLabel;
+    }
+
+    public String getQuestionTitle() {
+        return questionTitle;
     }
 }

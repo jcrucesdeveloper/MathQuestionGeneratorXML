@@ -11,6 +11,10 @@ public class Alternative {
         this.value = value;
     }
 
+    public String getValue() {
+        return value;
+    }
+
     public int getNumber() {
         return number;
     }

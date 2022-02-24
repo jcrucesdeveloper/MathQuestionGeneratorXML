@@ -1,5 +1,5 @@
 <questions>
-        <question>
+        <question difficulty="3">
             <questionLabel>x + 3 = 7</questionLabel>
             <alternative1>5</alternative1>
             <alternative2>6</alternative2>

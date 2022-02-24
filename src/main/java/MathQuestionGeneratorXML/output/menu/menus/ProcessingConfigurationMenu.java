@@ -7,6 +7,8 @@ import MathQuestionGeneratorXML.output.menu.AbstractMenu;
 import MathQuestionGeneratorXML.output.menu.MenuChanger;
 import MathQuestionGeneratorXML.output.xml.OutputXML;
 
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
 import java.util.ArrayList;
 
 public class ProcessingConfigurationMenu extends AbstractMenu {
@@ -23,7 +25,13 @@ public class ProcessingConfigurationMenu extends AbstractMenu {
     public void processInput(String line) {
 
         OutputXML xmlOutput = new OutputXML(line);
-        xmlOutput.outputFile(this.questionsToOutput);
+        try {
+            xmlOutput.outputFile(this.questionsToOutput);
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        } catch (TransformerException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

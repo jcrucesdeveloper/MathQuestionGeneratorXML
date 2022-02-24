@@ -46,23 +46,25 @@ public class OutputXML {
             Element questionLabel = doc.createElement("questionLabel");
             questionLabel.setTextContent(question.getQuestionLabel());
 
-            questionElement.appendChild(questionElement);
+            questionElement.appendChild(questionLabel);
+
 
             for (Alternative alternative: question.getAlternatives()) {
 
                 String alternativeStr = "alternative" + alternative.getNumber();
                 Element tempAlternative = doc.createElement(alternativeStr);
                 tempAlternative.setTextContent(alternative.getValue());
-
                 questionElement.appendChild(tempAlternative);
             }
             Element correctAlternative = doc.createElement("correctAlternative");
             correctAlternative.setTextContent(question.getCorrectAlternative().getValue());
 
+            questionElement.appendChild(correctAlternative);
+
             rootElement.appendChild(questionElement);
         }
         try (FileOutputStream output =
-                     new FileOutputStream("/home/jaco/IdeaProjects/MathGeneratorXMLQuestions/src/main/build")) {
+                     new FileOutputStream("/home/jaco/IdeaProjects/MathGeneratorXMLQuestions/src/main/build/" + this.filename + ".xml")) {
             writeXml(doc, output);
         } catch (IOException e) {
             e.printStackTrace();

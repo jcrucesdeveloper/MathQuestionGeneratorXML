@@ -17,6 +17,7 @@ public class Question {
 
     public Question() {
         alternatives = new ArrayList<Alternative>();
+        correctAlternative = new Alternative(-1,"correctAlternative");
     }
 
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="output.TestOutputXML" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-24T22:24:53" hostname="jaco" time="0.061">
+  <properties/>
+  <testcase name="testOuputFile()" classname="output.TestOutputXML" time="0.061"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

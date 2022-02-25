@@ -1,0 +1,8 @@
+{
+    "configurations": [{
+        "difficulty": 1,
+        "fileName": "lol.xml",
+        "numberQuestions": 2
+    }],
+    "configurationName": "configuration1"
+}

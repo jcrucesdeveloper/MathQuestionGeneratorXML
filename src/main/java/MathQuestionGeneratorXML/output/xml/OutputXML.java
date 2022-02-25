@@ -45,7 +45,6 @@ public class OutputXML {
             // Question Label
             Element questionLabel = doc.createElement("questionLabel");
             questionLabel.setTextContent(question.getQuestionLabel());
-
             questionElement.appendChild(questionLabel);
 
 

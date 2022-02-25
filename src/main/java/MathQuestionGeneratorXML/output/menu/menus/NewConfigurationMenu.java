@@ -2,6 +2,7 @@ package MathQuestionGeneratorXML.output.menu.menus;
 
 import MathQuestionGeneratorXML.logic.ReaderQuestions;
 import MathQuestionGeneratorXML.logic.questionConfiguration.QuestionConfiguration;
+import MathQuestionGeneratorXML.logic.questionConfiguration.SaverQuestionConfiguration;
 import MathQuestionGeneratorXML.logic.questionConfiguration.SetOfQuestionsConfiguration;
 import MathQuestionGeneratorXML.output.menu.AbstractMenu;
 import MathQuestionGeneratorXML.output.menu.MenuChanger;
@@ -80,6 +81,11 @@ public class NewConfigurationMenu extends AbstractMenu {
         } else {
             System.out.println("Final Configuration Saved: ");
             System.out.println(setOfQuestionsConfiguration);
+
+            // Save configuration
+            SaverQuestionConfiguration saverQuestionConfiguration = new SaverQuestionConfiguration();
+            saverQuestionConfiguration.saveConfiguration(setOfQuestionsConfiguration);
+
 
             ProcessingConfigurationMenu processingConfigurationMenu = new ProcessingConfigurationMenu(menuChanger);
             processingConfigurationMenu.setSetOfQuestionsConfiguration(setOfQuestionsConfiguration);

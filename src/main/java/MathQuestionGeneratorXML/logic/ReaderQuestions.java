@@ -1,6 +1,7 @@
 package MathQuestionGeneratorXML.logic;
 
 
+import MathQuestionGeneratorXML.input.xml.Tag;
 import MathQuestionGeneratorXML.input.xml.TagGroup;
 import MathQuestionGeneratorXML.input.xml.XMLParser;
 import MathQuestionGeneratorXML.logic.questionConfiguration.QuestionConfiguration;
@@ -73,12 +74,14 @@ public class ReaderQuestions {
             difficulty = Integer.parseInt(tagGroup.getAttribute("difficulty"));
         }
 
+        String questionLabel = tagGroup.getChildTagByName("questionLabel").getValue();
         String stringAlternative1 = tagGroup.getChildTagByName("alternative1").getValue();
         String stringAlternative2 = tagGroup.getChildTagByName("alternative2").getValue();
         String stringAlternative3 = tagGroup.getChildTagByName("alternative3").getValue();
         String stringCorrectAlternative = tagGroup.getChildTagByName("correctAlternative").getValue();
 
         Question question = new Question();
+        question.setQuestionLabel(questionLabel);
         question.setDifficulty(difficulty);
         question.addAlternative(1,stringAlternative1);
         question.addAlternative(2,stringAlternative2);

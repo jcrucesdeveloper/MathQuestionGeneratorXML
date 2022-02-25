@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<questions>
+    <question>
+        <questionLabel>x + 3 = 7</questionLabel>
+        <alternative1>5</alternative1>
+        <alternative2>6</alternative2>
+        <alternative3>3</alternative3>
+        <correctAlternative>4</correctAlternative>
+    </question>
+</questions>

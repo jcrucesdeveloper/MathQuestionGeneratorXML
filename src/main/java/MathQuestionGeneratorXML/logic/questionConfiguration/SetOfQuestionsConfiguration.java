@@ -26,6 +26,10 @@ public class SetOfQuestionsConfiguration {
         this.configurationName = configurationName;
     }
 
+    public String getConfigurationName() {
+        return configurationName;
+    }
+
     @Override
     public String toString() {
 

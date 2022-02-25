@@ -32,6 +32,11 @@ public class ProcessingConfigurationMenu extends AbstractMenu {
         } catch (TransformerException e) {
             e.printStackTrace();
         }
+        displayInBoxFormatted("File output in build/" + line + ".xml");
+
+        StandByMenu standByMenu = new StandByMenu(this.menuChanger);
+        standByMenu.setConfigurations(this.setOfQuestionsConfiguration);
+        this.menuChanger.changeMenu(standByMenu);
     }
 
     @Override

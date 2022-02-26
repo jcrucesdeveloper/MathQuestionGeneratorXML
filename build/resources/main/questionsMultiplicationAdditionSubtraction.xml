@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<questions>
+
+
+    <question difficulty="3">
+        <questionLabel>15*6 + 1</questionLabel>
+        <alternative1>81</alternative1>
+        <alternative2>99</alternative2>
+        <alternative3>93</alternative3>
+        <correctAlternative>91</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>43*3 + 9</questionLabel>
+        <alternative1>136</alternative1>
+        <alternative2>128</alternative2>
+        <alternative3>142</alternative3>
+        <correctAlternative>138</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>22*5 + 2*12</questionLabel>
+        <alternative1>154</alternative1>
+        <alternative2>102</alternative2>
+        <alternative3>122</alternative3>
+        <correctAlternative>134</correctAlternative>
+    </question>
+
+
+    <question difficulty="3">
+        <questionLabel>24*2 + 15*3</questionLabel>
+        <alternative1>94</alternative1>
+        <alternative2>83</alternative2>
+        <alternative3>96</alternative3>
+        <correctAlternative>93</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>32*3 - 8</questionLabel>
+        <alternative1>98</alternative1>
+        <alternative2>89</alternative2>
+        <alternative3>87</alternative3>
+        <correctAlternative>88</correctAlternative>
+    </question>
+
+
+    <question difficulty="4">
+        <questionLabel>6*12*2</questionLabel>
+        <alternative1>124</alternative1>
+        <alternative2>134</alternative2>
+        <alternative3>160</alternative3>
+        <correctAlternative>144</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>(-4)*5 + 28 - 7 </questionLabel>
+        <alternative1>41</alternative1>
+        <alternative2>3</alternative2>
+        <alternative3>-2</alternative3>
+        <correctAlternative>1</correctAlternative>
+    </question>
+</questions>

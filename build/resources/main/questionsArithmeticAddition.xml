@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Addition Questions -->
+<questions><question difficulty="1">
+    <questionLabel>2 + 2</questionLabel>
+    <alternative1>5</alternative1>
+    <alternative2>6</alternative2>
+    <alternative3>2099</alternative3>
+    <correctAlternative>4</correctAlternative>
+</question>
+
+    <!-- Basic addition -->
+    <question difficulty="1">
+        <questionLabel>6 + 7</questionLabel>
+        <alternative1>12</alternative1>
+        <alternative2>15</alternative2>
+        <alternative3>14</alternative3>
+        <correctAlternative>13</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>7 + 4</questionLabel>
+        <alternative1>12</alternative1>
+        <alternative2>14</alternative2>
+        <alternative3>9</alternative3>
+        <correctAlternative>11</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>8 + 6</questionLabel>
+        <alternative1>12</alternative1>
+        <alternative2>15</alternative2>
+        <alternative3>13</alternative3>
+        <correctAlternative>14</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>13+9</questionLabel>
+        <alternative1>23</alternative1>
+        <alternative2>25</alternative2>
+        <alternative3>21</alternative3>
+        <correctAlternative>22</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>55+45</questionLabel>
+        <alternative1>110</alternative1>
+        <alternative2>90</alternative2>
+        <alternative3>101</alternative3>
+        <correctAlternative>100</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>2 + 2</questionLabel>
+        <alternative1>5</alternative1>
+        <alternative2>6</alternative2>
+        <alternative3>2099</alternative3>
+        <correctAlternative>4</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>6 + 7</questionLabel>
+        <alternative1>12</alternative1>
+        <alternative2>15</alternative2>
+        <alternative3>14</alternative3>
+        <correctAlternative>13</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>7 + 4</questionLabel>
+        <alternative1>12</alternative1>
+        <alternative2>14</alternative2>
+        <alternative3>9</alternative3>
+        <correctAlternative>11</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>8 + 6</questionLabel>
+        <alternative1>12</alternative1>
+        <alternative2>15</alternative2>
+        <alternative3>13</alternative3>
+        <correctAlternative>14</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>13+9</questionLabel>
+        <alternative1>23</alternative1>
+        <alternative2>25</alternative2>
+        <alternative3>21</alternative3>
+        <correctAlternative>22</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>55+45</questionLabel>
+        <alternative1>110</alternative1>
+        <alternative2>90</alternative2>
+        <alternative3>101</alternative3>
+        <correctAlternative>100</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>7+8+15</questionLabel>
+        <alternative1>32</alternative1>
+        <alternative2>28</alternative2>
+        <alternative3>35</alternative3>
+        <correctAlternative>30</correctAlternative>
+    </question>
+
+    <!-- Complex addition -->
+    <question difficulty="2">
+        <questionLabel>125+9+6</questionLabel>
+        <alternative1>139</alternative1>
+        <alternative2>145</alternative2>
+        <alternative3>138</alternative3>
+        <correctAlternative>140</correctAlternative>
+    </question>
+
+    <question difficulty="2">
+        <questionLabel>132+12+3</questionLabel>
+        <alternative1>145</alternative1>
+        <alternative2>137</alternative2>
+        <alternative3>149</alternative3>
+        <correctAlternative>147</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>109+112</questionLabel>
+        <alternative1>209</alternative1>
+        <alternative2>219</alternative2>
+        <alternative3>121</alternative3>
+        <correctAlternative>221</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>2+115+172</questionLabel>
+        <alternative1>287</alternative1>
+        <alternative2>299</alternative2>
+        <alternative3>199</alternative3>
+        <correctAlternative>289</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>122+142+153</questionLabel>
+        <alternative1>307</alternative1>
+        <alternative2>347</alternative2>
+        <alternative3>407</alternative3>
+        <correctAlternative>417</correctAlternative>
+    </question>
+
+</questions>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<questions>
+
+
+    <question difficulty="1">
+        <questionLabel>12/3</questionLabel>
+        <alternative1>3</alternative1>
+        <alternative2>6</alternative2>
+        <alternative3>2</alternative3>
+        <correctAlternative>4</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>32/4</questionLabel>
+        <alternative1>12</alternative1>
+        <alternative2>9</alternative2>
+        <alternative3>13</alternative3>
+        <correctAlternative>8</correctAlternative>
+    </question>
+
+    <question difficulty="2">
+        <questionLabel>72/9</questionLabel>
+        <alternative1>9</alternative1>
+        <alternative2>13</alternative2>
+        <alternative3>7</alternative3>
+        <correctAlternative>8</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>123/3</questionLabel>
+        <alternative1>45</alternative1>
+        <alternative2>33</alternative2>
+        <alternative3>31</alternative3>
+        <correctAlternative>41</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>25/5 + 12/4</questionLabel>
+        <alternative1>9</alternative1>
+        <alternative2>12</alternative2>
+        <alternative3>14</alternative3>
+        <correctAlternative>8</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>14/2 + (-15)/5</questionLabel>
+        <alternative1>6</alternative1>
+        <alternative2>5</alternative2>
+        <alternative3>7</alternative3>
+        <correctAlternative>4</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>33/3 + (-4)*(-3)</questionLabel>
+        <alternative1>21</alternative1>
+        <alternative2>13</alternative2>
+        <alternative3>24</alternative3>
+        <correctAlternative>23</correctAlternative>
+    </question>
+</questions>

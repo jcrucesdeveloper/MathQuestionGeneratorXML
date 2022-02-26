@@ -3,8 +3,55 @@
 <!-- Multiplication Questions -->
 <questions>
 
-    <!-- BASIC MULTIPLICATION 34-40 -->
-    <question difficulty="2">
+    <question difficulty="1">
+        <questionLabel>4*3</questionLabel>
+        <alternative1></alternative1>
+        <alternative2></alternative2>
+        <alternative3></alternative3>
+        <correctAlternative>12</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>4*4</questionLabel>
+        <alternative1>12</alternative1>
+        <alternative2>14</alternative2>
+        <alternative3>18</alternative3>
+        <correctAlternative>16</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>8*3</questionLabel>
+        <alternative1>16</alternative1>
+        <alternative2>22</alternative2>
+        <alternative3>32</alternative3>
+        <correctAlternative>24</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>8*6</questionLabel>
+        <alternative1>52</alternative1>
+        <alternative2>44</alternative2>
+        <alternative3>54</alternative3>
+        <correctAlternative>48</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>27*4</questionLabel>
+        <alternative1>54</alternative1>
+        <alternative2>102</alternative2>
+        <alternative3>98</alternative3>
+        <correctAlternative>108</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>15*4</questionLabel>
+        <alternative1>30</alternative1>
+        <alternative2>120</alternative2>
+        <alternative3>80</alternative3>
+        <correctAlternative>60</correctAlternative>
+    </question>
+
+    <question difficulty="1">
         <questionLabel>15*3</questionLabel>
         <alternative1>35</alternative1>
         <alternative2>25</alternative2>
@@ -12,7 +59,7 @@
         <correctAlternative>45</correctAlternative>
     </question>
 
-    <question difficulty="2">
+    <question difficulty="1">
         <questionLabel>13 * 3</questionLabel>
         <alternative1>42</alternative1>
         <alternative2>36</alternative2>
@@ -20,12 +67,83 @@
         <correctAlternative>39</correctAlternative>
     </question>
 
-    <question difficulty="3">
+    <question difficulty="2">
+        <questionLabel>2*48</questionLabel>
+        <alternative1>98</alternative1>
+        <alternative2>102</alternative2>
+        <alternative3>104</alternative3>
+        <correctAlternative>96</correctAlternative>
+    </question>
+
+    <question difficulty="2">
+        <questionLabel>4*90</questionLabel>
+        <alternative1>270</alternative1>
+        <alternative2>340</alternative2>
+        <alternative3>320</alternative3>
+        <correctAlternative>360</correctAlternative>
+    </question>
+
+    <question difficulty="2">
+        <questionLabel>3*86</questionLabel>
+        <alternative1>264</alternative1>
+        <alternative2>272</alternative2>
+        <alternative3>298</alternative3>
+        <correctAlternative>258</correctAlternative>
+    </question>
+
+    <question difficulty="2">
+        <questionLabel>6*14</questionLabel>
+        <alternative1>92</alternative1>
+        <alternative2>88</alternative2>
+        <alternative3>79</alternative3>
+        <correctAlternative>84</correctAlternative>
+    </question>
+
+    <question difficulty="2">
+        <questionLabel>55*6</questionLabel>
+        <alternative1>310</alternative1>
+        <alternative2>430</alternative2>
+        <alternative3>630</alternative3>
+        <correctAlternative>330</correctAlternative>
+    </question>
+
+    <question difficulty="2">
+        <questionLabel>2*92</questionLabel>
+        <alternative1>194</alternative1>
+        <alternative2>174</alternative2>
+        <alternative3>204</alternative3>
+        <correctAlternative>184</correctAlternative>
+    </question>
+
+    <question difficulty="2">
         <questionLabel>18*4</questionLabel>
         <alternative1>52</alternative1>
         <alternative2>88</alternative2>
         <alternative3>78</alternative3>
         <correctAlternative>72</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>76*4</questionLabel>
+        <alternative1></alternative1>
+        <alternative2></alternative2>
+        <alternative3></alternative3>
+        <correctAlternative>304</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>6*63</questionLabel>
+        <alternative1></alternative1>
+        <alternative2></alternative2>
+        <alternative3></alternative3>
+        <correctAlternative>378</correctAlternative>
+    </question>
+    <question difficulty="3">
+        <questionLabel>26*4</questionLabel>
+        <alternative1></alternative1>
+        <alternative2></alternative2>
+        <alternative3></alternative3>
+        <correctAlternative>104</correctAlternative>
     </question>
 
     <question difficulty="3">
@@ -35,7 +153,6 @@
         <alternative3>126</alternative3>
         <correctAlternative>132</correctAlternative>
     </question>
-
 
     <question difficulty="3">
         <questionLabel>27 * 7</questionLabel>
@@ -61,8 +178,6 @@
         <correctAlternative>351</correctAlternative>
     </question>
 
-
-
     <question difficulty="3">
         <questionLabel>4 + 6^2</questionLabel>
         <alternative1>42</alternative1>
@@ -84,7 +199,7 @@
         <questionLabel>(-3)^2 + 18</questionLabel>
         <alternative1>9</alternative1>
         <alternative2>29</alternative2>
-        <alternative3>38</alternative3>3
+        <alternative3>38</alternative3>
         <correctAlternative>27</correctAlternative>
     </question>
 
@@ -96,13 +211,6 @@
         <correctAlternative>8</correctAlternative>
     </question>
 
-    <question difficulty="4">
-        <questionLabel>(-2)^2 + (-2)^3</questionLabel>
-        <alternative1>4</alternative1>
-        <alternative2>2</alternative2>
-        <alternative3>-2</alternative3>
-        <correctAlternative>-4</correctAlternative>
-    </question>
 
     <question difficulty="3">
         <questionLabel>(12)^2 + (4)^2 </questionLabel>
@@ -119,6 +227,15 @@
         <alternative3>75</alternative3>
         <correctAlternative>150</correctAlternative>
     </question>
+
+    <question difficulty="4">
+        <questionLabel>(-2)^2 + (-2)^3</questionLabel>
+        <alternative1>4</alternative1>
+        <alternative2>2</alternative2>
+        <alternative3>-2</alternative3>
+        <correctAlternative>-4</correctAlternative>
+    </question>
+
 
     <question difficulty="4">
         <questionLabel>4^2 + 4^3 + 5^2</questionLabel>

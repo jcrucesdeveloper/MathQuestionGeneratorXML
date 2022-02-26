@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<questions>
+    <question difficulty="3">
+        <questionLabel>(60*3)/6 + 21*2</questionLabel>
+        <alternative1>65</alternative1>
+        <alternative2>68</alternative2>
+        <alternative3>81</alternative3>
+        <correctAlternative>72</correctAlternative>
+    </question>
+
+
+    <question difficulty="4">
+        <questionLabel>[(8-12) * 4]/2 + 12</questionLabel>
+        <alternative1>-4</alternative1>
+        <alternative2>20</alternative2>
+        <alternative3>16</alternative3>
+        <correctAlternative>4</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>[5*2 + 5^3 + 25] - 5</questionLabel>
+        <alternative1>160</alternative1>
+        <alternative2>150</alternative2>
+        <alternative3>165</alternative3>
+        <correctAlternative>155</correctAlternative>
+    </question>
+
+
+    <question difficulty="4">
+        <questionLabel>[-5+(-3)*7]/(-2)</questionLabel>
+        <alternative1>-28</alternative1>
+        <alternative2>-13</alternative2>
+        <alternative3>-28</alternative3>
+        <correctAlternative>13</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>(-2)*2*(-2)*(-2)*2</questionLabel>
+        <alternative1>16</alternative1>
+        <alternative2>-16</alternative2>
+        <alternative3>32</alternative3>
+        <correctAlternative>-32</correctAlternative>
+    </question>
+
+
+    <question difficulty="4">
+        <questionLabel>[12*4 + (5-7)^3]/4</questionLabel>
+        <alternative1>22</alternative1>
+        <alternative2>1</alternative2>
+        <alternative3>36</alternative3>
+        <correctAlternative>10</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>(17*4)/4 + 5^3</questionLabel>
+        <alternative1>144</alternative1>
+        <alternative2>122</alternative2>
+        <alternative3>153</alternative3>
+        <correctAlternative>142</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>[(70-25)/9 * 5] + 10</questionLabel>
+        <alternative1>25</alternative1>
+        <alternative2>15</alternative2>
+        <alternative3>55</alternative3>
+        <correctAlternative>35</correctAlternative>
+    </question>
+</questions>

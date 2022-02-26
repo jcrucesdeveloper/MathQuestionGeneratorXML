@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<questions>
+
+
+    <question difficulty="2">
+        <questionLabel>15 + 7 - 25</questionLabel>
+        <alternative1>-4</alternative1>
+        <alternative2>-5</alternative2>
+        <alternative3>-2</alternative3>
+        <correctAlternative>-3</correctAlternative>
+    </question>
+
+    <question difficulty="2">
+        <questionLabel> -22 + 4 - 2 </questionLabel>
+        <alternative1>20</alternative1>
+        <alternative2>-18</alternative2>
+        <alternative3>-16</alternative3>
+        <correctAlternative>-20</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>-(-15) + 32 + (-54)</questionLabel>
+        <alternative1>-17</alternative1>
+        <alternative2>7</alternative2>
+        <alternative3>-14</alternative3>
+        <correctAlternative>-7</correctAlternative>
+    </question>
+
+    <question difficulty="2">
+        <questionLabel>-124 + 25</questionLabel>
+        <alternative1>-9</alternative1>
+        <alternative2>99</alternative2>
+        <alternative3>-109</alternative3>
+        <correctAlternative>-99</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>34 - (-125) + 235</questionLabel>
+        <alternative1>-395</alternative1>
+        <alternative2>358</alternative2>
+        <alternative3>294</alternative3>
+        <correctAlternative>394</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>95 - 134 - (-34)</questionLabel>
+        <alternative1>5</alternative1>
+        <alternative2>-7</alternative2>
+        <alternative3>-15</alternative3>
+        <correctAlternative>-5</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>521 - 3211</questionLabel>
+        <alternative1>-2509</alternative1>
+        <alternative2>2409</alternative2>
+        <alternative3>-3409</alternative3>
+        <correctAlternative>-2690</correctAlternative>
+    </question>
+
+</questions>

@@ -1,8 +1,15 @@
 {
-    "configurations": [{
-        "difficulty": 1,
-        "fileName": "questionsArithmetic.xml",
-        "numberQuestions": 1
-    }],
-    "configurationName": "newConfig"
+    "configurations": [
+        {
+            "difficulty": 1,
+            "fileName": "questionsAlgebraEquationsOneStep.xml",
+            "numberQuestions": 3
+        },
+        {
+            "difficulty": 1,
+            "fileName": "questionsArithmeticSubtraction.xml",
+            "numberQuestions": 3
+        }
+    ],
+    "configurationName": "fgfasfasdf"
 }

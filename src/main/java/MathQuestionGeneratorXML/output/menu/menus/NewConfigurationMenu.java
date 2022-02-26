@@ -126,7 +126,7 @@ public class NewConfigurationMenu extends AbstractMenu {
 
     public void displayDifficulty() {
         displayInBoxFormatted("Select difficulty from this file");
-        for (int i = 1 ; i <= 5; i++) {
+        for (int i = 1 ; i <= 4; i++) {
             displayOption(i, "Difficulty %d".formatted(i));
         }
     }

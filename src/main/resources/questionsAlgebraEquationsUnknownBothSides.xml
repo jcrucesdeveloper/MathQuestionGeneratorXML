@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<questions>
+
+
+    <question difficulty="4">
+        <questionLabel>-7 - 2x = -7x + 38</questionLabel>
+        <alternative1>-8</alternative1>
+        <alternative2>12</alternative2>
+        <alternative3>-11</alternative3>
+        <correctAlternative>9</correctAlternative>
+    </question>
+
+
+    <question difficulty="2">
+        <questionLabel>x + 20 = 6x - 5</questionLabel>
+        <alternative1>-4</alternative1>
+        <alternative2>4</alternative2>
+        <alternative3>3</alternative3>
+        <correctAlternative>5</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>5x + 5 = 7x - 3</questionLabel>
+        <alternative1>5</alternative1>
+        <alternative2>2</alternative2>
+        <alternative3>3</alternative3>
+        <correctAlternative>4</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>5x + 30 = 9x + 6</questionLabel>
+        <alternative1>9</alternative1>
+        <alternative2>8</alternative2>
+        <alternative3>3</alternative3>
+        <correctAlternative>6</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>3x + 13 = 7x + 1</questionLabel>
+        <alternative1>8</alternative1>
+        <alternative2>7</alternative2>
+        <alternative3>4</alternative3>
+        <correctAlternative>3</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>5x + 21 = 10x + 1</questionLabel>
+        <alternative1>5</alternative1>
+        <alternative2>8</alternative2>
+        <alternative3>3</alternative3>
+        <correctAlternative>4</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>-5x + 25 = -x - 3</questionLabel>
+        <alternative1>9</alternative1>
+        <alternative2>3</alternative2>
+        <alternative3>4</alternative3>
+        <correctAlternative>7</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>-7x + 18 = -x -6</questionLabel>
+        <alternative1>3</alternative1>
+        <alternative2>2</alternative2>
+        <alternative3>5</alternative3>
+        <correctAlternative>4</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>-7x - 21 = -9x - 3</questionLabel>
+        <alternative1>13</alternative1>
+        <alternative2>21</alternative2>
+        <alternative3>8</alternative3>
+        <correctAlternative>9</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>6x + 61 = -3 + 14x</questionLabel>
+        <alternative1>6</alternative1>
+        <alternative2>12</alternative2>
+        <alternative3>13</alternative3>
+        <correctAlternative>8</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>-7x - 75 = -14x + 2</questionLabel>
+        <alternative1>8</alternative1>
+        <alternative2>9</alternative2>
+        <alternative3>12</alternative3>
+        <correctAlternative>11</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>-8x + 22 = -6x -2</questionLabel>
+        <alternative1>20</alternative1>
+        <alternative2>15</alternative2>
+        <alternative3>13</alternative3>
+        <correctAlternative>12</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>-6x - 87 = -7 - 14x</questionLabel>
+        <alternative1>15</alternative1>
+        <alternative2>13</alternative2>
+        <alternative3>12</alternative3>
+        <correctAlternative>10</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>-15x - 7 = -25 -6x</questionLabel>
+        <alternative1>4</alternative1>
+        <alternative2>5</alternative2>
+        <alternative3>3</alternative3>
+        <correctAlternative>2</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>-38 - 7x = -17x - 8</questionLabel>
+        <alternative1>-4</alternative1>
+        <alternative2>4</alternative2>
+        <alternative3>-3</alternative3>
+        <correctAlternative>3</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>10x + 47 = -16x + 7</questionLabel>
+        <alternative1>7</alternative1>
+        <alternative2>5</alternative2>
+        <alternative3>4</alternative3>
+        <correctAlternative>9</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>-6x - 67 = -7 - 16x</questionLabel>
+        <alternative1>2</alternative1>
+        <alternative2>4</alternative2>
+        <alternative3>3</alternative3>
+        <correctAlternative>6</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>-10x - 22 = -12x - 6</questionLabel>
+        <alternative1>9</alternative1>
+        <alternative2>5</alternative2>
+        <alternative3>4</alternative3>
+        <correctAlternative>8</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>3x - 34 = -4x + 8</questionLabel>
+        <alternative1>12</alternative1>
+        <alternative2>5</alternative2>
+        <alternative3>7</alternative3>
+        <correctAlternative>6</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>-4x - 107 = -13x + 1</questionLabel>
+        <alternative1>10</alternative1>
+        <alternative2>9</alternative2>
+        <alternative3>8</alternative3>
+        <correctAlternative>12</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>-72 - 3x = -8x - 7</questionLabel>
+        <alternative1>15</alternative1>
+        <alternative2>12</alternative2>
+        <alternative3>11</alternative3>
+        <correctAlternative>13</correctAlternative>
+    </question>
+
+    <question difficulty="3">
+        <questionLabel>-4 -5x = 5x - 6</questionLabel>
+        <alternative1>8</alternative1>
+        <alternative2>4</alternative2>
+        <alternative3>3</alternative3>
+        <correctAlternative>6</correctAlternative>
+    </question>
+</questions>

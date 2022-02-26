@@ -33,7 +33,7 @@ public class ReaderQuestionConfiguration {
             QuestionConfiguration questionConfigurationTemp = new QuestionConfiguration();
 
             String difficulty = String.valueOf(jsonElementTemp.getAsJsonObject().get("difficulty"));
-            String fileName = String.valueOf(jsonElementTemp.getAsJsonObject().get("fileName"));
+            String fileName = String.valueOf(jsonElementTemp.getAsJsonObject().get("fileName").getAsString());
             String numberQuestions = String.valueOf(jsonElementTemp.getAsJsonObject().get("numberQuestions"));
 
             questionConfigurationTemp.setDifficulty(difficulty);

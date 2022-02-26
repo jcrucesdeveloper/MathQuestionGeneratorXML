@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<questions>
-    <question>
-        <questionLabel>questionLabel</questionLabel>
-        <alternative1>test</alternative1>
-        <alternative2>test</alternative2>
-        <correctAlternative>loool</correctAlternative>
-    </question>
-</questions>

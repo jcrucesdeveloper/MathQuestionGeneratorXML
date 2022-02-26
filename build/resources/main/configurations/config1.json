@@ -1,0 +1,8 @@
+{
+    "configurations": [{
+        "difficulty": 1,
+        "fileName": "questionsArithmetic.xml",
+        "numberQuestions": 1
+    }],
+    "configurationName": "newConfig"
+}

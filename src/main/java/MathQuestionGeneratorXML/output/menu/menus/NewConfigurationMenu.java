@@ -79,13 +79,12 @@ public class NewConfigurationMenu extends AbstractMenu {
         if (Objects.equals(input, "1")) {
             this.phase = PhasesNewConfiguration.FILE;
         } else {
-            System.out.println("Final Configuration Saved: ");
+            System.out.println("Final Configuration Saved as: " + setOfQuestionsConfiguration.getConfigurationName() );
             System.out.println(setOfQuestionsConfiguration);
 
             // Save configuration
             SaverQuestionConfiguration saverQuestionConfiguration = new SaverQuestionConfiguration();
-            saverQuestionConfiguration.saveConfiguration(setOfQuestionsConfiguration);
-
+            SaverQuestionConfiguration.saveConfiguration(setOfQuestionsConfiguration);
 
             ProcessingConfigurationMenu processingConfigurationMenu = new ProcessingConfigurationMenu(menuChanger);
             processingConfigurationMenu.setSetOfQuestionsConfiguration(setOfQuestionsConfiguration);

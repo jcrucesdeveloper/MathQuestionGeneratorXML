@@ -1,3 +1,7 @@
 # Configuration env
 .gradle
 .idea
+
+# Config files and outputFiles
+/src/main/build
+/src/main/resources/configurations/

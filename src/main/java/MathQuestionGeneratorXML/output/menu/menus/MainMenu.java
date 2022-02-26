@@ -14,6 +14,9 @@ public class MainMenu extends AbstractMenu {
         switch (line) {
             case "1" -> this.menuChanger.changeMenu(new NewConfigurationMenu(this.menuChanger));
             case "2" -> this.menuChanger.changeMenu(new OldConfigurationMenu(this.menuChanger));
+            case "0" -> {
+                System.exit(0);
+            }
         }
     }
 

@@ -5,9 +5,9 @@
 
     <question difficulty="1">
         <questionLabel>4*3</questionLabel>
-        <alternative1></alternative1>
-        <alternative2></alternative2>
-        <alternative3></alternative3>
+        <alternative1>8</alternative1>
+        <alternative2>14</alternative2>
+        <alternative3>16</alternative3>
         <correctAlternative>12</correctAlternative>
     </question>
 
@@ -125,24 +125,24 @@
 
     <question difficulty="3">
         <questionLabel>76*4</questionLabel>
-        <alternative1></alternative1>
-        <alternative2></alternative2>
-        <alternative3></alternative3>
+        <alternative1>204</alternative1>
+        <alternative2>104</alternative2>
+        <alternative3>244</alternative3>
         <correctAlternative>304</correctAlternative>
     </question>
 
     <question difficulty="3">
         <questionLabel>6*63</questionLabel>
-        <alternative1></alternative1>
-        <alternative2></alternative2>
-        <alternative3></alternative3>
+        <alternative1>358</alternative1>
+        <alternative2>472</alternative2>
+        <alternative3>488</alternative3>
         <correctAlternative>378</correctAlternative>
     </question>
     <question difficulty="3">
         <questionLabel>26*4</questionLabel>
-        <alternative1></alternative1>
-        <alternative2></alternative2>
-        <alternative3></alternative3>
+        <alternative1>124</alternative1>
+        <alternative2>112</alternative2>
+        <alternative3>122</alternative3>
         <correctAlternative>104</correctAlternative>
     </question>
 
@@ -228,6 +228,14 @@
         <correctAlternative>150</correctAlternative>
     </question>
 
+    <question difficulty="3">
+        <questionLabel>(-3)^2 - (-3)^3</questionLabel>
+        <alternative1>-36</alternative1>
+        <alternative2>-15</alternative2>
+        <alternative3>-18</alternative3>
+        <correctAlternative>36</correctAlternative>
+    </question>
+
     <question difficulty="4">
         <questionLabel>(-2)^2 + (-2)^3</questionLabel>
         <alternative1>4</alternative1>
@@ -245,12 +253,6 @@
         <correctAlternative>105</correctAlternative>
     </question>
 
-    <question difficulty="3">
-        <questionLabel>(-3)^2 - (-3)^3</questionLabel>
-        <alternative1>-36</alternative1>
-        <alternative2>-15</alternative2>
-        <alternative3>-18</alternative3>
-        <correctAlternative>36</correctAlternative>
-    </question>
+
 
 </questions>

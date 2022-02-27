@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <!-- Multiplication Questions -->
+<!-- Difficulty 1: 10 -->
+<!-- Difficulty 2: 11 -->
+<!-- Difficulty 3: 12 -->
+<!-- Difficulty 4: 9 -->
 <questions>
 
     <question difficulty="1">
@@ -67,6 +70,22 @@
         <correctAlternative>39</correctAlternative>
     </question>
 
+    <question difficulty="1">
+        <questionLabel>5 * 9</questionLabel>
+        <alternative1>55</alternative1>
+        <alternative2>40</alternative2>
+        <alternative3>50</alternative3>
+        <correctAlternative>45</correctAlternative>
+    </question>
+
+    <question difficulty="1">
+        <questionLabel>6 * 6</questionLabel>
+        <alternative1>30</alternative1>
+        <alternative2>42</alternative2>
+        <alternative3>34</alternative3>
+        <correctAlternative>36</correctAlternative>
+    </question>
+
     <question difficulty="2">
         <questionLabel>2*48</questionLabel>
         <alternative1>98</alternative1>
@@ -123,6 +142,38 @@
         <correctAlternative>72</correctAlternative>
     </question>
 
+    <question difficulty="2">
+        <questionLabel>8 * 33</questionLabel>
+        <alternative1>254</alternative1>
+        <alternative2>244</alternative2>
+        <alternative3>274</alternative3>
+        <correctAlternative>264</correctAlternative>
+    </question>
+
+    <question difficulty="2">
+        <questionLabel>74 * 7</questionLabel>
+        <alternative1>508</alternative1>
+        <alternative2>498</alternative2>
+        <alternative3>488</alternative3>
+        <correctAlternative>518</correctAlternative>
+    </question>
+
+    <question difficulty="2">
+        <questionLabel>4 * 16</questionLabel>
+        <alternative1>54</alternative1>
+        <alternative2>74</alternative2>
+        <alternative3>66</alternative3>
+        <correctAlternative>64</correctAlternative>
+    </question>
+
+    <question difficulty="2">
+        <questionLabel>97 * 5</questionLabel>
+        <alternative1>495</alternative1>
+        <alternative2>505</alternative2>
+        <alternative3>515</alternative3>
+        <correctAlternative>485</correctAlternative>
+    </question>
+
     <question difficulty="3">
         <questionLabel>76*4</questionLabel>
         <alternative1>204</alternative1>
@@ -162,21 +213,6 @@
         <correctAlternative>189</correctAlternative>
     </question>
 
-    <question difficulty="4">
-        <questionLabel>28*7</questionLabel>
-        <alternative1>186</alternative1>
-        <alternative2>146</alternative2>
-        <alternative3>206</alternative3>
-        <correctAlternative>196</correctAlternative>
-    </question>
-
-    <question difficulty="4">
-        <questionLabel>39*9</questionLabel>
-        <alternative1>201</alternative1>
-        <alternative2>271</alternative2>
-        <alternative3>341</alternative3>
-        <correctAlternative>351</correctAlternative>
-    </question>
 
     <question difficulty="3">
         <questionLabel>4 + 6^2</questionLabel>
@@ -251,6 +287,62 @@
         <alternative2>115</alternative2>
         <alternative3>125</alternative3>
         <correctAlternative>105</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>28*7</questionLabel>
+        <alternative1>186</alternative1>
+        <alternative2>146</alternative2>
+        <alternative3>206</alternative3>
+        <correctAlternative>196</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>39*9</questionLabel>
+        <alternative1>201</alternative1>
+        <alternative2>271</alternative2>
+        <alternative3>341</alternative3>
+        <correctAlternative>351</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>83 * 23</questionLabel>
+        <alternative1>1809</alternative1>
+        <alternative2>1709</alternative2>
+        <alternative3>1999</alternative3>
+        <correctAlternative>1909</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>17 * 62</questionLabel>
+        <alternative1>1064</alternative1>
+        <alternative2>1104</alternative2>
+        <alternative3>1034</alternative3>
+        <correctAlternative>1054</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>92 * 27</questionLabel>
+        <alternative1>2404</alternative1>
+        <alternative2>2494</alternative2>
+        <alternative3>2504</alternative3>
+        <correctAlternative>2484</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>30 * 43</questionLabel>
+        <alternative1>1299</alternative1>
+        <alternative2>1290</alternative2>
+        <alternative3>1390</alternative3>
+        <correctAlternative>1290</correctAlternative>
+    </question>
+
+    <question difficulty="4">
+        <questionLabel>23 * 28</questionLabel>
+        <alternative1>654</alternative1>
+        <alternative2>664</alternative2>
+        <alternative3>634</alternative3>
+        <correctAlternative>644</correctAlternative>
     </question>
 
 
